@@ -97,6 +97,22 @@ pyplot.savefig("BRAKER.PITALB_v0.2.hap1.Liliopsida.png",dpi=300,format='png')
 
 
 fig5 = pyplot.figure(figsize=(14,6))
-plot(from_contents(dataGALBALiliopsidaHap1),fig=fig4, show_counts="{:d}", show_percentages=True, element_size=None)
+plot(from_contents(dataGALBALiliopsidaHap1),fig=fig5, show_counts="{:d}", show_percentages=True, element_size=None)
 pyplot.suptitle("GALBA PITALB_v0.2.hap1 Liliopsida")
 pyplot.savefig("GALBA.PITALB_v0.2.hap1.Liliopsida.png",dpi=300,format='png')
+
+fig6 = pyplot.figure(figsize=(14,6))
+plot(from_contents(dataGALBALiliopsidaColl),fig=fig6, show_counts="{:d}", show_percentages=True, element_size=None)
+pyplot.suptitle("GALBA PITALB_v0.2.coll Liliopsida")
+pyplot.savefig("GALBA.PITALB_v0.2.coll.Liliopsida.png",dpi=300,format='png')
+
+fig7 = pyplot.figure(figsize=(14,6))
+plot(from_contents(dataGALBAEmbryophytaHap1),fig=fig7, show_counts="{:d}", show_percentages=True, element_size=None)
+pyplot.suptitle("GALBA PITALB_v0.2.hap1 Embryophyta")
+pyplot.savefig("GALBA.PITALB_v0.2.hap1.Embryophyta.png",dpi=300,format='png')
+
+fig8 = pyplot.figure(figsize=(14,6))
+plot(from_contents(dataGALBAEmbryophytaColl),fig=fig8, show_counts="{:d}", show_percentages=True, element_size=None)
+pyplot.suptitle("GALBA PITALB_v0.2.coll Embryophyta")
+pyplot.savefig("GALBA.PITALB_v0.2.coll.Embryophyta.png",dpi=300,format='png')
+
