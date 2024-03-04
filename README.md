@@ -27,9 +27,9 @@ We run annotation on the collapsed version of the genome and also on hap1.
 | BRAKER 1 | Hap1 | 91.8% | 84.1% | 7.7% | 3.5% | 4.7% | 3236 | Liliopsida |
 | BRAKER 2 | Hap1 | 92.0% | 73.9% | 18.1% | 5.1% | 2.9% | 3236 | Liliopsida |
 | BRAKER 1 and 2 | Hap1 | 97.8% | 79.2% | 18.6% | 0.6% | 1.6% | 3236 | Liliopsida |
-| BRAKER 1 | Hap1 |  | | | | | 3236 | Liliopsida |
-| BRAKER 2 | Hap1 |  | | | | | 3236 | Liliopsida |
-| BRAKER 1 and 2 | Hap1 |  |  |  |  |  | 3236 | Liliopsida |
+| BRAKER 1 | Hap1 | 91.8% | 84.1% | 7.7% | 3.5% | 4.7% | 3236 | Liliopsida |
+| BRAKER 2 | Hap1 | 92.0% | 73.9% | 18.1% | 5.1% | 2.9% | 3236 | Liliopsida |
+| BRAKER 1 and 2 | Hap1 | 97.8% | 79.7% | 18.1% | 0.6% | 1.6% | 3236 | Liliopsida |
 | GALBA 1 | Collapsed | 98.4% | 82.8% | 15.6% | 0.6% | 1.0% | 1614 | Embryophyta |
 | GALBA 3 | Collapsed | 97.0% | 81.7% | 15.6% | 1.4% | 1.3% | 1614 | Embryophyta |
 | GALBA 1 | Collapsed | 97.3% | 81.7% | 15.6% | 1.4% | 1.3% | 3236 | Liliopsida |
@@ -38,3 +38,5 @@ We run annotation on the collapsed version of the genome and also on hap1.
 | GALBA 3 | Hap1 | 98.1% | 67.6% | 30.5% | 1.2% | 0.7% | 1614 | Embryophyta |
 | GALBA 1 | Hap1 | 97.3% | 82.4% | 14.9% | 1.7% | 1.0% | 3236 | Liliopsida |
 | GALBA 3 | Hap1 | 96.7% | 70.5% | 26.2% | 2.0% | 1.3% | 3236 | Liliopsida |
+
+Pay attention that the duuplicated BUSCOs here most likely mean alternative gene model versions and not paralogs.
