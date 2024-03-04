@@ -83,6 +83,43 @@ dataGALBAEmbryophytaColl = {
  'Bromeliaceae' : df9.values.flatten().tolist(),
  'universe' :  df7.values.flatten().tolist()
 }
+
+dataGALBABRAKEREmbryophytaColl = {
+ 'BRAKER_Prots' : df1.values.flatten().tolist(),
+ 'BRAKER_RNASeq' : df2.values.flatten().tolist(),
+ 'BRAKER_Both' : df3.values.flatten().tolist(),
+ 'GALBA_Viridiplantae' : df11.values.flatten().tolist(),
+ 'GALBA_Bromeliaceae' : df9.values.flatten().tolist(),
+ 'universe' : df7.values.flatten().tolist()
+}
+
+dataGALBABRAKEREmbryophytaHap1 = {
+ 'BRAKER_Prots' : df4.values.flatten().tolist(),
+ 'BRAKER_RNASeq' : df5.values.flatten().tolist(),
+ 'BRAKER_Both' : df6.values.flatten().tolist(),
+ 'GALBA_Viridiplantae' : df15.values.flatten().tolist(),
+ 'GALBA_Bromeliaceae' : df13.values.flatten().tolist(),
+ 'universe' :  df7.values.flatten().tolist()
+}
+
+dataGALBABRAKERLiliopsidaColl = {
+ 'BRAKER_Prots' : df17.values.flatten().tolist(),
+ 'BRAKER_RNASeq' : df18.values.flatten().tolist(),
+ 'BRAKER_Both' : df19.values.flatten().tolist(),
+ 'GALBA_Viridiplantae' : df12.values.flatten().tolist(),
+ 'GALBA_Bromeliaceae' : df10.values.flatten().tolist(),
+ 'universe' :  df8.values.flatten().tolist()
+}
+
+dataGALBABRAKERLiliopsidaHap1 = {
+ 'BRAKER_Prots' : df20.values.flatten().tolist(),
+ 'BRAKER_RNASeq' : df21.values.flatten().tolist(),
+ 'BRAKER_Both' : df22.values.flatten().tolist(),
+ 'GALBA_Viridiplantae' : df16.values.flatten().tolist(),
+ 'GALBA_Bromeliaceae' : df14.values.flatten().tolist(),
+ 'universe' :  df8.values.flatten().tolist()
+}
+
 fig1 = pyplot.figure(figsize=(14,6))
 #Forcing to plot empty sybsets
 #plot(from_contents(dataBRAKEREmbryophytaColl),fig=fig1, show_counts="{:d}", show_percentages=True, element_size=None,include_empty_subsets=True)
@@ -127,4 +164,25 @@ fig8 = pyplot.figure(figsize=(14,6))
 plot(from_contents(dataGALBAEmbryophytaColl),fig=fig8, show_counts="{:d}", show_percentages=True, element_size=None)
 pyplot.suptitle("GALBA PITALB_v0.2.coll Embryophyta")
 pyplot.savefig("GALBA/GALBA.PITALB_v0.2.coll.Embryophyta.png",dpi=300,format='png')
+
+fig9 = pyplot.figure(figsize=(14,6))
+plot(from_contents(dataGALBABRAKEREmbryophytaColl),fig=fig9, show_counts="{:d}", show_percentages=True, element_size=None)
+pyplot.suptitle("GALBA and BRAKER PITALB_v0.2.coll Embryophyta")
+pyplot.savefig("GALBA.BRAKER.PITALB_v0.2.coll.Embryophyta.png",dpi=300,format='png')
+
+fig10 = pyplot.figure(figsize=(14,6))
+plot(from_contents(dataGALBABRAKEREmbryophytaHap1),fig=fig10, show_counts="{:d}", show_percentages=True, element_size=None)
+pyplot.suptitle("GALBA and BRAKER PITALB_v0.2.hap1 Embryophyta")
+pyplot.savefig("GALBA.BRAKER.PITALB_v0.2.hap1.Embryophyta.png",dpi=300,format='png')
+
+fig11 = pyplot.figure(figsize=(14,6))
+plot(from_contents(dataGALBABRAKERLiliopsidaColl),fig=fig11, show_counts="{:d}", show_percentages=True, element_size=None)
+pyplot.suptitle("GALBA and BRAKER PITALB_v0.2.coll Liliopsida")
+pyplot.savefig("GALBA.BRAKER.PITALB_v0.2.coll.Liliopsida.png",dpi=300,format='png')
+
+fig12 = pyplot.figure(figsize=(14,6))
+plot(from_contents(dataGALBABRAKERLiliopsidaHap1),fig=fig12, show_counts="{:d}", show_percentages=True, element_size=None)
+pyplot.suptitle("GALBA and BRAKER PITALB_v0.2.hap1 Liliopsida")
+pyplot.savefig("GALBA.BRAKER.PITALB_v0.2.hap1.Liliopsida.png",dpi=300,format='png')
+
 
