@@ -39,4 +39,23 @@ We run annotation on the collapsed version of the genome and also on hap1.
 | GALBA 1 | Hap1 | 97.3% | 82.4% | 14.9% | 1.7% | 1.0% | 3236 | Liliopsida |
 | GALBA 3 | Hap1 | 96.7% | 70.5% | 26.2% | 2.0% | 1.3% | 3236 | Liliopsida |
 
-Pay attention that the duuplicated BUSCOs here most likely mean alternative gene model versions and not paralogs.
+Pay attention that the duplicated BUSCOs here most likely mean alternative gene model versions produced by Augustus and not paralogs.
+
+Also  note that we are getting an excelent proportion of complete BUSCOs. In the case of BRAKER the best performance is using both protein and RNASeq evidence. And with GALBA the best performance is with sequences from Viridiplantae form OrthoDB.
+
+But we must not stop at just looking at these numbers. We must look at the overlaps in the BUSCO identification by the different strategies. For instance it could be that one Missing BUSCO in one prediciont set is present in another prediction set. Let's look at that using upsetplots:
+
+![GALBA.BRAKER.coll.Embryophyta](GALBA.BRAKER.PITALB_v0.2.coll.Embryophyta.png)
+
+Each black ball represent the number of BUSCO genes found. Balls conected with black lines represent intersections. All BUSCO genes found were counted, i.e., complete and fragmented.
+
+Universe represent all BUSCO genes (100%), in either Embryophyta or Liliopsida.
+
+Pay attention that there are some BUSCO genes only present in one of the prediction attempts, which suggests that we should combine all the attempts into a consensus prediction, using TSEBRA or EvidenceModeller.
+
+![GALBA.BRAKER.hap1.Embryophyta](GALBA.BRAKER.PITALB_v0.2.hap1.Embryophyta.png)
+
+![GALBA.BRAKER.coll.Liliopsida1](GALBA.BRAKER.PITALB_v0.2.coll.Liliopsida.png)
+
+![GALBA.BRAKER.hap1.Liliopsida](GALBA.BRAKER.PITALB_v0.2.hap1.Liliopsida.png)
+
