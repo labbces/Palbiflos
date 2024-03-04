@@ -16,6 +16,10 @@ We run annotation on the collapsed version of the genome and also on hap1.
 
 ### BUSCO results
 
+| Sowftware and Evidence | Complete BUSCO | Single BUSCO | Duplicated BUSCO | Fragmented BUSCO | Missing BUSCO | N BUSCO | BUSCO DB |
+| --- | --- | --- | --- | --- | --- |--- | --- |
+| BRAKER 1 | 91.5% | 84.4% | 7.1% | 4.7% | 3.8% | 1614 | Embryophyta |
+
 
 | Software | Evidence used <td colspan=6> BUSCO Embryophyta - hap1  BUSCO Liliopsida - hap1 | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -25,8 +29,8 @@ We run annotation on the collapsed version of the genome and also on hap1.
 
 
 
-| BRAKER | 1 | C:91.5%[S:84.4%,D:7.1%],F:4.7%,M:3.8%,n:1614 | C:91.8%[S:84.1%,D:7.7%],F:3.5%,M:4.7%,n:3236 |
-| BRAKER | 2 |  |  |
-| BRAKER | 1 and 2 |  |  |
-| GALBA | 1 |  |  |
-| GALBA | 3 |  |  |
+#| BRAKER | 1 | C:91.5%[S:84.4%,D:7.1%],F:4.7%,M:3.8%,n:1614 | C:91.8%[S:84.1%,D:7.7%],F:3.5%,M:4.7%,n:3236 |
+#| BRAKER | 2 |  |  |
+#| BRAKER | 1 and 2 |  |  |
+#| GALBA | 1 |  |  |
+#| GALBA | 3 |  |  |
