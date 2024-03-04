@@ -1,0 +1,1 @@
+for file in $(ls -1  galba.*/*BUSCO*/*_odb10/full_table.tsv); do BASE=${file////__}; BASE=${BASE/.tsv}; echo $BASE; echo $file; cut -f 1,2 $file | grep -v "#" | grep -v Missing | cut -f 1|sort -u > ${BASE}.found; done
