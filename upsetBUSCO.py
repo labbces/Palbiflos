@@ -34,6 +34,15 @@ df14 = pd.read_table("GALBA/galba.february2024.hap1.Bromeliaceae_NCBI__augustus.
 df15 = pd.read_table("GALBA/galba.february2024.hap1.ViridiplantaeOrthoDB__augustus.hints.BUSCO_embryophyta_odb10__run_embryophyta_odb10__full_table.found.gz",header=None)
 df16 = pd.read_table("GALBA/galba.february2024.hap1.ViridiplantaeOrthoDB__augustus.hints.BUSCO_liliopsida_odb10__run_liliopsida_odb10__full_table.found.gz",header=None)
 
+df23 = pd.read_table("GALBA/galba.march2024.coll.Bromeliaceae_NCBI__galba.BUSCO_embryophyta_odb10__run_embryophyta_odb10__full_table.found.gz",header=None)
+df24 = pd.read_table("GALBA/galba.march2024.coll.Bromeliaceae_NCBI__galba.BUSCO_liliopsida_odb10__run_liliopsida_odb10__full_table.found.gz",header=None)
+df25 = pd.read_table("GALBA/galba.march2024.coll.ViridiplantaeOrthoDB__galba.BUSCO_embryophyta_odb10__run_embryophyta_odb10__full_table.found.gz",header=None)
+df26 = pd.read_table("GALBA/galba.march2024.coll.ViridiplantaeOrthoDB__galba.BUSCO_liliopsida_odb10__run_liliopsida_odb10__full_table.found.gz",header=None)
+df27 = pd.read_table("GALBA/galba.march2024.hap1.Bromeliaceae_NCBI__galba.BUSCO_embryophyta_odb10__run_embryophyta_odb10__full_table.found.gz",header=None)
+df28 = pd.read_table("GALBA/galba.march2024.hap1.Bromeliaceae_NCBI__galba.BUSCO_liliopsida_odb10__run_liliopsida_odb10__full_table.found.gz",header=None)
+df29 = pd.read_table("GALBA/galba.march2024.hap1.ViridiplantaeOrthoDB__galba.BUSCO_embryophyta_odb10__run_embryophyta_odb10__full_table.found.gz",header=None)
+df30 = pd.read_table("GALBA/galba.march2024.hap1.ViridiplantaeOrthoDB__galba.BUSCO_liliopsida_odb10__run_liliopsida_odb10__full_table.found.gz",header=None)
+
 dataBRAKEREmbryophytaColl = {
  'ProtsViridiplantae' : df1.values.flatten().tolist(),
  'RNASeq' : df2.values.flatten().tolist(),
@@ -88,8 +97,10 @@ dataGALBABRAKEREmbryophytaColl = {
  'BRAKER_Prots' : df1.values.flatten().tolist(),
  'BRAKER_RNASeq' : df2.values.flatten().tolist(),
  'BRAKER_Both' : df3.values.flatten().tolist(),
- 'GALBA_Viridiplantae' : df11.values.flatten().tolist(),
- 'GALBA_Bromeliaceae' : df9.values.flatten().tolist(),
+ 'GALBA_ViridiplantaeIncomplete' : df11.values.flatten().tolist(),
+ 'GALBA_BromeliaceaeIncomplete' : df9.values.flatten().tolist(),
+ 'GALBA_ViridiplantaeComplete' : df25.values.flatten().tolist(),
+ 'GALBA_BromeliaceaeComplete' : df23.values.flatten().tolist(),
  'universe' : df7.values.flatten().tolist()
 }
 
@@ -97,8 +108,10 @@ dataGALBABRAKEREmbryophytaHap1 = {
  'BRAKER_Prots' : df4.values.flatten().tolist(),
  'BRAKER_RNASeq' : df5.values.flatten().tolist(),
  'BRAKER_Both' : df6.values.flatten().tolist(),
- 'GALBA_Viridiplantae' : df15.values.flatten().tolist(),
- 'GALBA_Bromeliaceae' : df13.values.flatten().tolist(),
+ 'GALBA_ViridiplantaeIncomplete' : df15.values.flatten().tolist(),
+ 'GALBA_BromeliaceaeIncomplete' : df13.values.flatten().tolist(),
+ 'GALBA_ViridiplantaeComplete' : df29.values.flatten().tolist(),
+ 'GALBA_BromeliaceaeComplete' : df27.values.flatten().tolist(),
  'universe' :  df7.values.flatten().tolist()
 }
 
@@ -106,8 +119,10 @@ dataGALBABRAKERLiliopsidaColl = {
  'BRAKER_Prots' : df17.values.flatten().tolist(),
  'BRAKER_RNASeq' : df18.values.flatten().tolist(),
  'BRAKER_Both' : df19.values.flatten().tolist(),
- 'GALBA_Viridiplantae' : df12.values.flatten().tolist(),
- 'GALBA_Bromeliaceae' : df10.values.flatten().tolist(),
+ 'GALBA_ViridiplantaeIncomplete' : df12.values.flatten().tolist(),
+ 'GALBA_BromeliaceaeIncomplete' : df10.values.flatten().tolist(),
+ 'GALBA_ViridiplantaeComplete' : df26.values.flatten().tolist(),
+ 'GALBA_BromeliaceaeComplete' : df24.values.flatten().tolist(),
  'universe' :  df8.values.flatten().tolist()
 }
 
@@ -115,8 +130,10 @@ dataGALBABRAKERLiliopsidaHap1 = {
  'BRAKER_Prots' : df20.values.flatten().tolist(),
  'BRAKER_RNASeq' : df21.values.flatten().tolist(),
  'BRAKER_Both' : df22.values.flatten().tolist(),
- 'GALBA_Viridiplantae' : df16.values.flatten().tolist(),
- 'GALBA_Bromeliaceae' : df14.values.flatten().tolist(),
+ 'GALBA_ViridiplantaeIncomplete' : df16.values.flatten().tolist(),
+ 'GALBA_BromeliaceaeIncomplete' : df14.values.flatten().tolist(),
+ 'GALBA_ViridiplantaeComplete' : df30.values.flatten().tolist(),
+ 'GALBA_BromeliaceaeComplete' : df28.values.flatten().tolist(),
  'universe' :  df8.values.flatten().tolist()
 }
 
